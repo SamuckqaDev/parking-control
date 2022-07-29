@@ -7,6 +7,8 @@ import java.util.UUID;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import br.com.matsutech.parkingcontrol.model.ParkingSpot;
@@ -23,8 +25,8 @@ public class ParkingSpotService {
         return repository.save(parkingSpot);
     }
 
-    public List<ParkingSpot> findAll() {
-        return repository.findAll();
+    public Page<ParkingSpot> findAllPage(Pageable pageable) {
+        return repository.findAll(pageable);
     }
 
     public boolean existsByLicensePlateCar(String licensePlateCar) {
@@ -42,7 +44,7 @@ public class ParkingSpotService {
     public Optional<ParkingSpot> findParkingSpotById(UUID id) {
         return repository.findById(id);
     }
-    
+
     @Transactional
     public void deleteParkingSpotById(ParkingSpot parkingSpot) {
         repository.delete(parkingSpot);
