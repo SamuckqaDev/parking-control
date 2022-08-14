@@ -50,6 +50,4 @@ public class ParkingSpot implements Serializable{
     @Column(nullable = false, length = 10)
     private String block;
 
-    
-    
 }

@@ -1,6 +1,5 @@
 package br.com.matsutech.parkingcontrol.service;
 
-import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
