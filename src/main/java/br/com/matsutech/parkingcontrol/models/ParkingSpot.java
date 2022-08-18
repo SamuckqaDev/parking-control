@@ -1,4 +1,4 @@
-package br.com.matsutech.parkingcontrol.model;
+package br.com.matsutech.parkingcontrol.models;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

@@ -1,4 +1,4 @@
-package br.com.matsutech.parkingcontrol.service;
+package br.com.matsutech.parkingcontrol.services;
 
 import java.util.Optional;
 import java.util.UUID;
@@ -10,8 +10,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import br.com.matsutech.parkingcontrol.model.ParkingSpot;
-import br.com.matsutech.parkingcontrol.repository.ParkingSpotRepository;
+import br.com.matsutech.parkingcontrol.models.ParkingSpot;
+import br.com.matsutech.parkingcontrol.repositories.ParkingSpotRepository;
 
 @Service
 public class ParkingSpotService {

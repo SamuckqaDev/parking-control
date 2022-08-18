@@ -11,10 +11,11 @@ public class ParkingControlApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ParkingControlApplication.class, args);
+
 	}
 
 	@Bean
-	public PasswordEncoder getPasswordEncoder(){
+	public static PasswordEncoder getPasswordEncoder(){
 		return new BCryptPasswordEncoder();
 	}
 }

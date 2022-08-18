@@ -1,4 +1,4 @@
-package br.com.matsutech.parkingcontrol.dto;
+package br.com.matsutech.parkingcontrol.dtos;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;

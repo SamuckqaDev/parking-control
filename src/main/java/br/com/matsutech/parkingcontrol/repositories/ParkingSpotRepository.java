@@ -1,11 +1,11 @@
-package br.com.matsutech.parkingcontrol.repository;
+package br.com.matsutech.parkingcontrol.repositories;
 
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.matsutech.parkingcontrol.model.ParkingSpot;
+import br.com.matsutech.parkingcontrol.models.ParkingSpot;
 
 @Repository
 public interface ParkingSpotRepository extends JpaRepository<ParkingSpot, UUID> {

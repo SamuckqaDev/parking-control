@@ -12,7 +12,7 @@
 	<artifactId>parking-control</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>parking-control</name>
-	<description>System manager parcking control started with Spring boot</description>
+	<description>System manager parking control started with Spring boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -33,7 +33,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>

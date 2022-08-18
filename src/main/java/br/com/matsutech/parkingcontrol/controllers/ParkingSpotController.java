@@ -1,4 +1,4 @@
-package br.com.matsutech.parkingcontrol.controller;
+package br.com.matsutech.parkingcontrol.controllers;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -25,9 +25,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.matsutech.parkingcontrol.dto.ParkingSpotDto;
-import br.com.matsutech.parkingcontrol.model.ParkingSpot;
-import br.com.matsutech.parkingcontrol.service.ParkingSpotService;
+import br.com.matsutech.parkingcontrol.dtos.ParkingSpotDto;
+import br.com.matsutech.parkingcontrol.models.ParkingSpot;
+import br.com.matsutech.parkingcontrol.services.ParkingSpotService;
 
 @RestController
 @CrossOrigin(originPatterns = "*", maxAge = 3600)
